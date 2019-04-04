@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Contractor Recruit</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              CONTRACTOR RECRUIT
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="#top">About Us</a></li>
+                                    <li><a href="#connect">Connect</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+            <h4 id="top">Contractor Recruit - <i>'Taking the effort out of recruiting'</i></h4>
+            
+            <div class="content">
+                   <p><b>Contractor Recruit was created to provide a unique approach to the way UK
+                  businesses recruit their candidates.</b></p>
+
+                  <p>Sourcing the correct candidate for your client is a very time-consuming activity and at times, it can seem like you are looking for a needle in a haystack.
+                  Worse yet, incorrect information on candidate CV’s can prolong this process
+                  further.</p> 
+
+                  <p>Contractor Recruit takes the pain out of resourcing by providing current and up to
+                  date information on potential candidates leaving your recruiters more time to talk to the right people.
+                  </p>
+
+                  <img src="photos/recruitment.jpg" class="recruitmentPic">
+                  <br />
+                  <br />
+                  <hr />
+
+
+            <h2> Connect </h2>
+               <ul id="connect">
+
+                  <img src="photos/cv.jpg" class="cvPicture">
+
+                  <li>Looking for your next role? Click <a href="mailto:info@contractorrecruit.co.uk">here</a> and submit CV</li>
+                  <br />
+              
+                  <li>Got a role to be filled? Click <a href="mailto:info@contractorrecruit.co.uk">here</a> to submit a vacancy</li>
+               </ul>
+
+                  <br />
+                  <hr />
+
+            <h2>Contact Us</h2>
+
+               <p id="contact"></p>
+
+            <h5>Address:</h5>
+
+                  <p>New Broad Street House,</p>
+                  <p>35 New Broad Street,</p>
+                  <p>London</p>
+                  <p>EC2M 1NH</p>
+
+            <h5>Telephone:</h5>
+                <p>0203 9704135</p>
+
+    
+            </div>
+
+            <div>
+               <div id="map" class="img-responsive img-rounded"></div>
+            </div>
+
+      </div>
+
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+
+
+      <script type="text/javascript" src="js.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAEMGGwGLPEYSKYlFrDJpjHTV-wGqJDls&callback=initMap"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
